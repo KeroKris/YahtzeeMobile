@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score_one_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Aces:" />
+
+            <TextView
+                android:id="@+id/score_two_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Twos:" />
+
+            <TextView
+                android:id="@+id/score_three_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Threes:" />
+
+            <TextView
+                android:id="@+id/score_four_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Fours:" />
+
+            <TextView
+                android:id="@+id/score_five_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Fives:" />
+
+            <TextView
+                android:id="@+id/score_six_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Sixes:" />
+
+            <TextView
+                android:id="@+id/score_bonus_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Bonus:" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score_threex_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Three of a kind:" />
+
+            <TextView
+                android:id="@+id/score_fourx_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Four of a kind:" />
+
+            <TextView
+                android:id="@+id/score_fullhouse_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Full House:" />
+
+            <TextView
+                android:id="@+id/score_smstraight_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Small Straight:" />
+
+            <TextView
+                android:id="@+id/score_lstraight_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Large Straight:" />
+
+            <TextView
+                android:id="@+id/score_yahtzee_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Yahtzee:" />
+
+            <TextView
+                android:id="@+id/score_chance_textView"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Chance:" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/current_player_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_name_text_view"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRollButtonClick"
+            android:width="150dp"
+            android:text="Roll" />
+
+
+        <TextView
+            android:id="@+id/calling_activity_info_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rolls_remaining_textView" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/die_one_textView"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <CheckBox android:id="@+id/die_one_checkBox" />
+
+        <TextView
+            android:id="@+id/die_two_textView"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <CheckBox android:id="@+id/die_two_checkBox" />
+
+        <TextView
+            android:id="@+id/die_three_textView"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <CheckBox android:id="@+id/die_three_checkBox" />
+
+        <TextView
+            android:id="@+id/die_four_textView"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <CheckBox android:id="@+id/die_four_checkBox" />
+
+        <TextView
+            android:id="@+id/die_five_textView"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none" />
+
+        <CheckBox android:id="@+id/die_five_checkBox" />
+    </GridLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/score_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="onScoreCombinationClick"
+        android:text="Score Combination" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leader_board_text_view"
+        android:text="leaderboard"/>
+
+</LinearLayout>

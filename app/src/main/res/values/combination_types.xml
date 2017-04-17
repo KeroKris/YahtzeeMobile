@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combination_types">
+        <item>Aces</item>
+        <item>Twos</item>
+        <item>Threes</item>
+        <item>Fours</item>
+        <item>Fives</item>
+        <item>Sixes</item>
+        <item>Three of a Kind</item>
+        <item>Four of a Kind</item>
+        <item>Full House</item>
+        <item>Small Straight</item>
+        <item>Large Straight</item>
+        <item>Yahtzee</item>
+        <item>Chance</item>
+    </string-array>
+
+</resources>

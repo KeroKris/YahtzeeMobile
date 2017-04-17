@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Yahtzee</string>
+    <string name="enter_name_text_view">Current Player:</string>
+    <string name="choose_number_of_players_text_view">Choose number of players</string>
+    <string name="play_game_button_text">Play Yahtzee!</string>
+    <string name="rolls_remaining_textView">Rolls remaining:</string>
+</resources>
